@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package view;
 
@@ -12,15 +12,15 @@ import persistence.PersistAviary;
  *
  * @author Eduardo Czpla
  */
-public class ViewAviary extends javax.swing.JFrame {
-    
+public class ViewAviaryNewInternal extends javax.swing.JInternalFrame {
+
     private Aviary aviary;
     private PersistAviary persistAviary;
-
+    
     /**
-     * Creates new form ViewAviary
+     * Creates new form ViewAviaryInternal
      */
-    public ViewAviary() {
+    public ViewAviaryNewInternal() {
         initComponents();
     }
 
@@ -33,40 +33,22 @@ public class ViewAviary extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnAviarySave = new javax.swing.JButton();
-        txtAviarySize = new javax.swing.JTextField();
-        txtAviaryName = new javax.swing.JTextField();
-        txtAviaryCity = new javax.swing.JTextField();
-        txtAviaryState = new javax.swing.JTextField();
         txtAviaryStreet = new javax.swing.JTextField();
         txtAviaryNumber = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        btnAviarySave = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        txtAviarySize = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
+        txtAviaryName = new javax.swing.JTextField();
+        txtAviaryCity = new javax.swing.JTextField();
+        txtAviaryState = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
-        setResizable(false);
-
-        btnAviarySave.setText("Salvar");
-        btnAviarySave.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAviarySaveActionPerformed(evt);
-            }
-        });
-
-        txtAviarySize.setToolTipText("Digite o tamanho...");
-
-        txtAviaryName.setToolTipText("");
-        txtAviaryName.setName(""); // NOI18N
-
-        txtAviaryCity.setToolTipText("Digite a cidade...");
-        txtAviaryCity.setName(""); // NOI18N
-
-        txtAviaryState.setToolTipText("Digite o estado...");
+        setClosable(true);
+        setIconifiable(true);
 
         txtAviaryStreet.setToolTipText("Digite a rua...");
 
@@ -80,9 +62,26 @@ public class ViewAviary extends javax.swing.JFrame {
 
         jLabel4.setText("Rua:");
 
+        btnAviarySave.setText("Salvar");
+        btnAviarySave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAviarySaveActionPerformed(evt);
+            }
+        });
+
         jLabel5.setText("Número:");
 
+        txtAviarySize.setToolTipText("Digite o tamanho...");
+
         jLabel6.setText("Tamanho:");
+
+        txtAviaryName.setToolTipText("");
+        txtAviaryName.setName(""); // NOI18N
+
+        txtAviaryCity.setToolTipText("Digite a cidade...");
+        txtAviaryCity.setName(""); // NOI18N
+
+        txtAviaryState.setToolTipText("Digite o estado...");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,7 +107,7 @@ public class ViewAviary extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(txtAviarySize, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txtAviaryNumber, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -140,75 +139,37 @@ public class ViewAviary extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addGap(35, 35, 35)
                 .addComponent(btnAviarySave, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
 
-        txtAviaryName.getAccessibleContext().setAccessibleName("");
-        txtAviaryCity.getAccessibleContext().setAccessibleName("");
-
-        pack();
-        setLocationRelativeTo(null);
+        setBounds(300, 100, 467, 400);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAviarySaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAviarySaveActionPerformed
         try {
             aviary = new Aviary();
             persistAviary = new PersistAviary();
-            
+
             aviary.setName(txtAviaryName.getText());
             aviary.setCity(txtAviaryCity.getText());
             aviary.setState(txtAviaryState.getText());
             aviary.setStreet(txtAviaryStreet.getText());
             aviary.setNumber(Integer.parseInt(txtAviaryNumber.getText()));
             aviary.setSize(Integer.parseInt(txtAviarySize.getText()));
-            
+
             boolean result = persistAviary.store(aviary);
-            
+
             if(result == true) {
-                JOptionPane.showMessageDialog(null, "Aviário salvo com sucesso.", "SUCESSO", JOptionPane.INFORMATION_MESSAGE); 
+                JOptionPane.showMessageDialog(null, "Aviário salvo com sucesso.", "SUCESSO", JOptionPane.INFORMATION_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(null, "Ocorreu um erro ao salvar o aviário.", "ERRO", JOptionPane.ERROR_MESSAGE); 
+                JOptionPane.showMessageDialog(null, "Ocorreu um erro ao salvar o aviário.", "ERRO", JOptionPane.ERROR_MESSAGE);
             }
-            
+
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e, "ERRO", JOptionPane.ERROR_MESSAGE); 
+            JOptionPane.showMessageDialog(null, e, "ERRO", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnAviarySaveActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ViewAviary.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ViewAviary.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ViewAviary.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ViewAviary.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ViewAviary().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAviarySave;
