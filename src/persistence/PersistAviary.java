@@ -33,7 +33,7 @@ public class PersistAviary {
                     "'" + aviary.getName()  + "'," +
                     "'" + aviary.getCity()  + "'," +
                     "'" + aviary.getState() + "'," +
-                    "'" + aviary.getState() + "'," +
+                    "'" + aviary.getStreet() + "'," +
                     aviary.getNumber() + "," +
                     aviary.getSize()   + ")");
             

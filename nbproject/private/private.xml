@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Eduardo%20Czpla/Documents/NetBeansProjects/s_ave/src/view/ViewAviary.java</file>
-            <file>file:/C:/Users/Eduardo%20Czpla/Documents/NetBeansProjects/s_ave/src/model/Aviary.java</file>
-            <file>file:/C:/Users/Eduardo%20Czpla/Documents/NetBeansProjects/s_ave/src/model/Batch.java</file>
-            <file>file:/C:/Users/Eduardo%20Czpla/Documents/NetBeansProjects/s_ave/src/model/Sampling.java</file>
-            <file>file:/C:/Users/Eduardo%20Czpla/Documents/NetBeansProjects/s_ave/src/persistence/Connect.java</file>
-            <file>file:/C:/Users/Eduardo%20Czpla/Documents/NetBeansProjects/s_ave/src/persistence/PersistAviary.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
