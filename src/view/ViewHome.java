@@ -38,6 +38,8 @@ public class ViewHome extends javax.swing.JFrame {
         MenuItemNewAviary = new javax.swing.JMenuItem();
         MenuItemListAviary = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        MenuItemNewBatch = new javax.swing.JMenuItem();
+        MenuItemListBatch = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("A_AVE");
@@ -73,7 +75,15 @@ public class ViewHome extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Lote");
+        jMenu2.setToolTipText("");
+
+        MenuItemNewBatch.setText("Novo");
+        jMenu2.add(MenuItemNewBatch);
+
+        MenuItemListBatch.setText("Listar");
+        jMenu2.add(MenuItemListBatch);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -147,7 +157,9 @@ public class ViewHome extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane JdpHome;
     private javax.swing.JMenuItem MenuItemListAviary;
+    private javax.swing.JMenuItem MenuItemListBatch;
     private javax.swing.JMenuItem MenuItemNewAviary;
+    private javax.swing.JMenuItem MenuItemNewBatch;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
