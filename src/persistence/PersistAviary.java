@@ -20,7 +20,6 @@ public class PersistAviary {
     private Connect connection;
     private Statement statement;
     private ResultSet resultset;
-    private String result;
     
     public PersistAviary() {
         this.connection = new Connect();
