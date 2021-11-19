@@ -24,7 +24,7 @@ Projeto desenvolvido para trabalho de AEP do 4º semestre de Engenharia de Softw
 
 ## 🚀 Tecnologicas
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com as seguintes tecnologias
 
  - JAVA
  - MYSQL
