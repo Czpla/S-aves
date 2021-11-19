@@ -1,15 +1,15 @@
--- SCRIPT S_AVES - AEP - UNICESUMAR - 4º PERIODO
+-- SCRIPT S_AVES - AEP - UNICESUMAR - 4ï¿½ PERIODO
 
 -- -----------------------------------------------------
--- Schema s_aves
+-- Schema s_ave
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `s_aves` DEFAULT CHARACTER SET utf8
-USE s_aves
+CREATE SCHEMA IF NOT EXISTS `s_ave` DEFAULT CHARACTER SET utf8
+USE s_ave
 
 -- -----------------------------------------------------
--- Table `s_aves`.`AVIARY`
+-- Table `s_ave`.`AVIARY`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `s_aves`.`AVIARY` (
+CREATE TABLE IF NOT EXISTS `s_ave`.`AVIARY` (
   `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `NAME` VARCHAR(50) NOT NULL,
   `CITY` VARCHAR(50) NOT NULL,
@@ -23,9 +23,9 @@ ENGINE = InnoDB
 
 
 -- -----------------------------------------------------
--- Table `s_aves`.`BATCH`
+-- Table `s_ave`.`BATCH`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `s_aves`.`BATCH` (
+CREATE TABLE IF NOT EXISTS `s_ave`.`BATCH` (
   `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `START_DATE` DATE NOT NULL,
   `END_DATE` DATE NOT NULL,
@@ -37,5 +37,5 @@ CREATE TABLE IF NOT EXISTS `s_aves`.`BATCH` (
   INDEX `FK_BATCH_AVIARY_IDX` (`ID_AVIARY`),
   CONSTRAINT `FK_BATCH_AVIARY`
     FOREIGN KEY (`ID_AVIARY`)
-    REFERENCES `s_aves`.`AVIARY` (`ID`))
+    REFERENCES `s_ave`.`AVIARY` (`ID`))
 ENGINE = InnoDB
