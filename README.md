@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="S_AVES" src="logo.png" width="200px">
+  <img alt="S_AVES" src=".github/logo.png" width="200px">
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@ Projeto desenvolvido para trabalho de AEP do 4º semestre de Engenharia de Softw
 
 ## 🚀 Tecnologicas
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com as seguintes tecnologias
 
  - JAVA
  - MYSQL
@@ -59,7 +59,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
       - **Mysql-java-connection**
       - **JCalendar-1.4**
  
-3. Na classe _connect:_ Realize a configuração da conexão com banco de dados colocando seu banco de dados, usuário e senha
+3. Na classe _connect:_ Realize a configuração da conexão com banco de dados colocando o nome do seu schema, usuário e senha
 
 ```java
     private static Connection connection;
@@ -71,7 +71,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```
 4. Realize a criação do banco de dados
     
-    Abra um SGBD de sua preferência e rode o seguinte **[script]()**
+    Abra um SGBD de sua preferência e rode o seguinte **[script](.github/script-a_aves.sql)**
+    
+---
+
+Feito com ♥ by Eduardo Czpla
   
      
 
