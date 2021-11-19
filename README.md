@@ -71,7 +71,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```
 4. Realize a criação do banco de dados
     
-    Abra um SGBD de sua preferência e rode o seguinte **[script]()**
+    Abra um SGBD de sua preferência e rode o seguinte **[script](.github/script-a_aves.sql)**
   
      
 
