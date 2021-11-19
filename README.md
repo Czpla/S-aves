@@ -22,7 +22,7 @@ Projeto desenvolvido para trabalho de AEP do 4º semestre de Engenharia de Softw
  - Organizar os dados dos lotes de aves cadastrados no sistema. 
  - Expandir o suporte dado pela tecnologia da informação na vida do trabalhador rural. 
 
-## 🚀 Tecnologicas
+## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias
 
