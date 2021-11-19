@@ -13,7 +13,7 @@
 
 <h2 align="center">Sobre 📖</h2>
 
-Projeto desenvolvido para trabalho de AEP do 4º semestre de Egenharia de Software.
+Projeto desenvolvido para trabalho de AEP do 4º semestre de Engenharia de Software.
 
 ---
 
