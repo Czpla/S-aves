@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="PayFlow" src=".github/payflow-logo.png" width="200px">
+  <img alt="S_AVES" src=".logo.png" width="200px">
 </p>
 
 Projeto desenvolvido para trabalho de AEP do 4º semestre de Egenharia de Software.
