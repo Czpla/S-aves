@@ -1,4 +1,6 @@
-# S_AVES 
+<p align="center">
+  <img alt="PayFlow" src=".github/payflow-logo.png" width="200px">
+</p>
 
 Projeto desenvolvido para trabalho de AEP do 4º semestre de Egenharia de Software.
 
@@ -14,12 +16,19 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
  - JAVA
  - MYSQL
 
+## 📘 Recursos necessários
+
+- NetBeans
+- XAMP
+
 ## 🗺 Instalação da aplicação
 
-Utilize um terminal da sua escolha e rode os seguintes comandos
+ 1. Utilize um terminal da sua escolha e rode o seguinte comando
 
 ```bash
- git clone 
+ git clone https://github.com/Czpla/s_aves.git
 ```
+
+2. Abra o editor NetBeans
 
 
