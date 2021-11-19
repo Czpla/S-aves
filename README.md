@@ -53,5 +53,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```
 
 2. Abra o editor NetBeans
+ 
+    Realize a importação da bibliotecas
+
+      - **Mysql-java-connection**
+      - **JCalendar-1.4**
+ 
+3. Realize a configuração da conexão com banco de dados
+  
+     
 
 
