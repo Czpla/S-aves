@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="S_AVES" src="logo.png" width="200px">
+  <img alt="S_AVES" src=".github/logo.png" width="200px">
 </p>
 
 <p align="center">
