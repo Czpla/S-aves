@@ -11,7 +11,11 @@
 
 ---
 
+<h2 align="center">Sobre 📖</h2>
+
 Projeto desenvolvido para trabalho de AEP do 4º semestre de Egenharia de Software.
+
+---
 
 ## 💻 Objetivo
 
@@ -27,8 +31,18 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📘 Recursos necessários
 
-- NetBeans
-- XAMPP
+1. Softwares
+  
+    - **NetBeans**
+    - **XAMPP**
+
+2. Bibliotecas
+
+    - **Mysql-java-connection** **[download](https://dev.mysql.com/downloads/file/?id=507327)**
+    - **JCalendar-1.4** **[download](https://www.toedter.com/download/jcalendar-1.4.zip)**
+
+3. JDK
+    - **17**
 
 ## 🗺 Instalação da aplicação
 
