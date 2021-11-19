@@ -139,7 +139,7 @@ public class ViewAviaryNewInternal extends javax.swing.JInternalFrame {
                     .addComponent(jLabel6))
                 .addGap(35, 35, 35)
                 .addComponent(btnAviarySave, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
 
         setBounds(300, 100, 467, 400);

@@ -26,6 +26,9 @@ public class ViewHome extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
         try {
             JdpHome =(javax.swing.JDesktopPane)java.beans.Beans.instantiate(getClass().getClassLoader(), "view.ViewHome_JdpHome");
         } catch (ClassNotFoundException e) {
@@ -40,9 +43,19 @@ public class ViewHome extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         MenuItemNewBatch = new javax.swing.JMenuItem();
         MenuItemListBatch = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        MenuItemNewSampling = new javax.swing.JMenuItem();
+        MenuItemListSampling = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("A_AVE");
+        setTitle("S_AVE");
 
         javax.swing.GroupLayout JdpHomeLayout = new javax.swing.GroupLayout(JdpHome);
         JdpHome.setLayout(JdpHomeLayout);
@@ -79,12 +92,35 @@ public class ViewHome extends javax.swing.JFrame {
         jMenu2.setToolTipText("");
 
         MenuItemNewBatch.setText("Novo");
+        MenuItemNewBatch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemNewBatchActionPerformed(evt);
+            }
+        });
         jMenu2.add(MenuItemNewBatch);
 
         MenuItemListBatch.setText("Listar");
         jMenu2.add(MenuItemListBatch);
 
         jMenuBar1.add(jMenu2);
+
+        jMenu5.setText("Amostra");
+
+        MenuItemNewSampling.setText("Nova");
+        MenuItemNewSampling.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemNewSamplingActionPerformed(evt);
+            }
+        });
+        jMenu5.add(MenuItemNewSampling);
+
+        MenuItemListSampling.setText("Listar");
+        jMenu5.add(MenuItemListSampling);
+
+        jMenuBar1.add(jMenu5);
+
+        jMenu6.setText("Relatório");
+        jMenuBar1.add(jMenu6);
 
         setJMenuBar(jMenuBar1);
 
@@ -118,6 +154,22 @@ public class ViewHome extends javax.swing.JFrame {
         
         viewAviaryListInternal.setVisible(true);
     }//GEN-LAST:event_MenuItemListAviaryActionPerformed
+
+    private void MenuItemNewBatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemNewBatchActionPerformed
+        ViewBatchNewInternal viewBatchNewInternal = new ViewBatchNewInternal();
+        
+        JdpHome.add(viewBatchNewInternal);
+        
+        viewBatchNewInternal.setVisible(true);
+    }//GEN-LAST:event_MenuItemNewBatchActionPerformed
+
+    private void MenuItemNewSamplingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemNewSamplingActionPerformed
+        ViewSamplingNewInternal viewSamplingNewInternal = new ViewSamplingNewInternal();
+        
+        JdpHome.add(viewSamplingNewInternal);
+        
+        viewSamplingNewInternal.setVisible(true);
+    }//GEN-LAST:event_MenuItemNewSamplingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,10 +210,17 @@ public class ViewHome extends javax.swing.JFrame {
     private javax.swing.JDesktopPane JdpHome;
     private javax.swing.JMenuItem MenuItemListAviary;
     private javax.swing.JMenuItem MenuItemListBatch;
+    private javax.swing.JMenuItem MenuItemListSampling;
     private javax.swing.JMenuItem MenuItemNewAviary;
     private javax.swing.JMenuItem MenuItemNewBatch;
+    private javax.swing.JMenuItem MenuItemNewSampling;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
 }
