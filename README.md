@@ -54,7 +54,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 2. Abra o editor NetBeans
  
-    Realize a importação da bibliotecas
+    Realize a importação das bibliotecas
 
       - **Mysql-java-connection**
       - **JCalendar-1.4**
@@ -69,6 +69,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
     private static final String url = "jdbc:mysql://localhost:3306/" + db;
     private static final String driver = "com.mysql.cj.jdbc.Driver";
 ```
+4. Realize a criação do banco de dados
+    
+    Abra um SGBD de sua preferência e rode o seguinte **[script]()**
   
      
 
