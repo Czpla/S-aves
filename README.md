@@ -59,7 +59,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
       - **Mysql-java-connection**
       - **JCalendar-1.4**
  
-3. Realize a configuração da conexão com banco de dados
+3. Na classe _connect:_ Realize a configuração da conexão com banco de dados colocando seu banco de dados, usuário e senha
+
+```java
+    private static Connection connection;
+    private static final String db = "s_ave";
+    private static final String user = "root";
+    private static final String password = "";
+    private static final String url = "jdbc:mysql://localhost:3306/" + db;
+    private static final String driver = "com.mysql.cj.jdbc.Driver";
+```
   
      
 
